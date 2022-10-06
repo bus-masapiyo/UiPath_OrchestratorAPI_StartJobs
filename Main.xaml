@@ -1,0 +1,221 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="698,2495" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="43">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Mail.Activities.Business.ForEachMail</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="34">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="シーケンス" sap:VirtualizedContainerService.HintSize="636,2190" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <umab:OutlookApplicationCard Account="{x:Null}" DisplayName="デスクトップ版 Outlook アプリを使用" sap:VirtualizedContainerService.HintSize="594,2098" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_1">
+      <umab:OutlookApplicationCard.Body>
+        <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Outlook" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="実行" sap:VirtualizedContainerService.HintSize="560,1915" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <umab:ForEachEmailX MailFilter="{x:Null}" DisplayName="繰り返し (各メール)" sap:VirtualizedContainerService.HintSize="518,1823" sap2010:WorkflowViewState.IdRef="ForEachEmailX_2" IncludeSubfolders="False" Mails="[Outlook.Folder(&quot;%E5%8F%97%E4%BF%A1%E3%83%88%E3%83%AC%E3%82%A4\RPA%E3%83%86%E3%82%B9%E3%83%88&quot;)]" NumberOfEmailsLimit="5" UnreadOnly="False" WithAttachmentsOnly="False">
+              <umab:ForEachEmailX.Body>
+                <ActivityAction x:TypeArguments="snm:MailMessage, x:Int32">
+                  <ActivityAction.Argument1>
+                    <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="CurrentMail" />
+                  </ActivityAction.Argument1>
+                  <ActivityAction.Argument2>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                  </ActivityAction.Argument2>
+                  <If Condition="[CurrentMail.Body.Contains(&quot;【プロセスＩＤ：&quot;) = True]" DisplayName="条件分岐" sap:VirtualizedContainerService.HintSize="484,1587" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,1398" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="ProcessID" />
+                          <Variable x:TypeArguments="x:String" Name="ResponceBody" />
+                          <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="ResponceHeader" />
+                          <Variable x:TypeArguments="x:Int32" Name="ResponceStatus" />
+                          <Variable x:TypeArguments="njl:JObject" Name="jsonBody" />
+                          <Variable x:TypeArguments="x:String" Name="employeeNo" />
+                          <Variable x:TypeArguments="x:String" Name="arg" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <WriteLine DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[string.Format(&quot;- 【カレントメール】&quot; &amp; vbCrLf &amp; &quot;- [件名] {0}&quot; &amp; vbCrLf &amp; &quot;- [本文] {1}&quot;, CurrentMail.Subject, CurrentMail.Body.Substring(CurrentMail.Body.IndexOf(&quot;：&quot;)+1, CurrentMail.Body.IndexOf(&quot;】&quot;) - (CurrentMail.Body.IndexOf(&quot;：&quot;) +1)))]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </WriteLine>
+                        <Assign DisplayName="代入 - メール本文からプロセスIDを取得する" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[ProcessID]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(CurrentMail.Body, "【プロセスＩＤ：[0-9]+】").Value.Replace("【プロセスＩＤ：","").Replace("】","")]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign DisplayName="代入 - メール本文から従業員番号を取得する" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[employeeNo]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(CurrentMail.Body, "【従業員番号：[0-9]+】").Value.Replace("【従業員番号：","").Replace("】","")]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign DisplayName="代入 - メール本文から３つ目のパラメータ（arg）を取得する" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[arg]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(CurrentMail.Body, "【arg：.+】").Value.Replace("【arg：","").Replace("】","")]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <WriteLine DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[String.Format(&quot;- [プロセスID] {0}&quot; &amp; vbCrLf &amp;  &quot;- [従業員番号] {1}&quot; &amp; vbCrLf &amp;  &quot;- [arg] {2}&quot;, ProcessID, employeeNo, arg)]" />
+                        <ui:OrchestratorHttpRequest JSONPayload="{x:Null}" TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="「フォルダパス」プロパティのフォルダ名を変更してください" DisplayName="Orchestrator への HTTP 要求" FolderPath="モダンフォルダＡ" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="OrchestratorHttpRequest_2" Method="GET" RelativeEndpoint="[&quot;odata/Releases(&quot; &amp; ProcessID &amp; &quot;)&quot;]" ResponseHeaders="[ResponceHeader]" Result="[ResponceBody]" StatusCode="[ResponceStatus]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:OrchestratorHttpRequest>
+                        <WriteLine DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[String.Format(&quot;- 【プロセスIDを取得結果】&quot; &amp; vbCrLf &amp;  &quot;- [応答ステータス] {0}&quot; &amp; vbCrLf &amp;  &quot;- [応答ヘッダ] {1}&quot; &amp; vbCrLf &amp; &quot;- [応答本体] {2}&quot;, ResponceStatus, ResponceHeader, ResponceBody)]" />
+                        <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="JSON を逆シリアル化" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[jsonBody]" JsonString="[ResponceBody]" />
+                        <WriteLine DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[String.Format(&quot;- 【プロセスキー】&quot; &amp; vbCrLf &amp;  &quot;- [プロセスキー] {0}&quot;, jsonBody(&quot;Key&quot;).ToString)]" />
+                        <WriteLine DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[String.Format(&quot;- 【httpリクエストパラメータ】&quot; &amp; vbCrLf &amp; &quot;- [httpリクエストパラメータ] {0}&quot;, &quot;{  &quot;&quot;startInfo&quot;&quot;: {    &quot;&quot;ReleaseKey&quot;&quot;: &quot;&quot;&quot; &amp; jsonBody(&quot;Key&quot;).ToString &amp; &quot;&quot;&quot;,    &quot;&quot;Strategy&quot;&quot;: &quot;&quot;Specific&quot;&quot;,    &quot;&quot;RobotIds&quot;&quot;: [29254], &quot;&quot;InputArguments&quot;&quot;: &quot;&quot;{\&quot;&quot;employeeNo\&quot;&quot;:\&quot;&quot;&quot; &amp; employeeNo &amp; &quot;\&quot;&quot;,\&quot;&quot;arg\&quot;&quot;:\&quot;&quot;&quot; &amp; arg &amp; &quot;\&quot;&quot;}&quot;&quot; }}&quot;)]" />
+                        <ui:OrchestratorHttpRequest TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="「RobotIds」パラメータを変更してください" DisplayName="Orchestrator への HTTP 要求" FolderPath="モダンフォルダＡ" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="OrchestratorHttpRequest_5" JSONPayload="[&quot;{  &quot;&quot;startInfo&quot;&quot;: {    &quot;&quot;ReleaseKey&quot;&quot;: &quot;&quot;&quot; &amp; jsonBody(&quot;Key&quot;).ToString &amp; &quot;&quot;&quot;,    &quot;&quot;Strategy&quot;&quot;: &quot;&quot;Specific&quot;&quot;,    &quot;&quot;RobotIds&quot;&quot;: [29254], &quot;&quot;InputArguments&quot;&quot;: &quot;&quot;{\&quot;&quot;employeeNo\&quot;&quot;:\&quot;&quot;&quot; &amp; employeeNo &amp; &quot;\&quot;&quot;,\&quot;&quot;arg\&quot;&quot;:\&quot;&quot;&quot; &amp; arg &amp; &quot;\&quot;&quot;}&quot;&quot; }}&quot;]" Method="POST" RelativeEndpoint="odata/Jobs/UiPath.Server.Configuration.OData.StartJobs" ResponseHeaders="[ResponceHeader]" Result="[ResponceBody]" StatusCode="[ResponceStatus]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:OrchestratorHttpRequest>
+                        <WriteLine DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[String.Format(&quot;- 【ジョブを開始要求結果】&quot; &amp; vbCrLf &amp;  &quot;- [応答ステータス] {0}&quot; &amp; vbCrLf &amp;  &quot;- [応答ヘッダ] {1}&quot; &amp; vbCrLf &amp; &quot;- [応答本体] {2}&quot;, ResponceStatus, ResponceHeader, ResponceBody)]" />
+                        <ui:CommentOut sap2010:Annotation.AnnotationText="処理済のメールは移動するなど" DisplayName="コメント アウト" sap:VirtualizedContainerService.HintSize="334,83" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="無視されたアクティビティ" sap:VirtualizedContainerService.HintSize="476,226" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <umab:MoveMailX MailFolder="{x:Null}" MailMessage="{x:Null}" DisplayName="メールを移動" sap:VirtualizedContainerService.HintSize="434,134" sap2010:WorkflowViewState.IdRef="MoveMailX_1" />
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="200,84" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </ActivityAction>
+              </umab:ForEachEmailX.Body>
+            </umab:ForEachEmailX>
+          </Sequence>
+        </ActivityAction>
+      </umab:OutlookApplicationCard.Body>
+    </umab:OutlookApplicationCard>
+  </Sequence>
+</Activity>
